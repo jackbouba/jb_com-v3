@@ -278,7 +278,7 @@ h2 {
   }
   .pull-left {
     a {
-      @include replace-text(url(/images/bg_sprite.png), -463px, 0 );
+      @include replace-text(url(/images/bg_sprite.png), -483px, 0 );
       display: inline-block;
       margin-right: 10px;
       vertical-align: text-bottom;
@@ -287,7 +287,7 @@ h2 {
         height: 15px;
       }
       &.linkedin {
-        background-position: -463px -16px;
+        background-position: -483px -16px;
         height: 18px;
       }
     }
