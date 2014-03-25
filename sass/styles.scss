@@ -26,14 +26,14 @@ body {
   font-weight: 400;
 }
 a {
-  color: $green;
+  color: $brown;
   &:hover {
     color: $orange;
     text-decoration: none;
   }
 }
 h2, h3, h4, h5, h6 {
-  color: $green;
+  color: $brown;
 }
 .section {
   padding: 30px 0;
@@ -75,11 +75,11 @@ h2 {
     display: inline-block;
     padding: 15px;
     &:hover {
-      background-color: rgba($green, .1);
+      background-color: rgba($brown, .1);
     }
     &.active {
       @include single-box-shadow(rgba(0,0,0,.1), 0, -2px, 10px, 0, inset);
-      background-color: rgba($green, .7);
+      background-color: rgba($brown, .7);
       color: #FFF;
     }
   }
@@ -89,7 +89,7 @@ h2 {
 // Carousel
 // ===================================== /
 .carousel {
-  background-color: $green;
+  background-color: $brown;
   color: #FFF;
   padding: 0;
   text-align: center;
@@ -97,11 +97,11 @@ h2 {
     padding: 120px 0;
   }
   .item1 {
-    background-color: $green;
+    background-color: $purple;
     background-image: url(/images/bg_webdesign2.png);
   }
   .item2 {
-    background-color: $violet;
+    background-color: $blue;
     background-image: url(/images/bg_writing.png);
   }
   .item3 {
@@ -139,7 +139,7 @@ h2 {
     margin: 0 20px 40px;
     &:hover {
       i {
-        background-color: $orange;
+        background-color: $purple;
       }
     }
     i {
@@ -154,7 +154,7 @@ h2 {
         background-repeat: no-repeat;
         content: " ";
         display: block;
-        width: 142px;
+        width: 152px;
         height: 115px;
       }
     }
@@ -177,8 +177,7 @@ h2 {
     &.desserts {
       i {
         &:before {
-          background-position: -320px 0;
-          width: 142px;
+          background-position: -330px 0;
         }
       }
     }
@@ -189,7 +188,7 @@ h2 {
 // Portfolio
 // ===================================== /
 .portfolio {
-  background-color: $green;
+  background-color: $brown;
   h2 {
     color: #FFF;
   }
