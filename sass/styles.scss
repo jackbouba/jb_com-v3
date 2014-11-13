@@ -5,25 +5,51 @@
 @import "custom";
 
 // ===================================== \
-// Utilities
+// Fonts
 // ===================================== /
+.alegreya {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 800;
+}
+.abril {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 400;
+}
+.lato {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+.open-sans {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+.old-standard {
+  font-family: 'Old Standard TT', serif;
+  font-weight: 400;
+}
+.gentium {
+  font-family: 'Gentium Book Basic', serif;
+  font-weight: 400;
+}
+
+// ===================================== \
+// Utilities
+// =====================================
 .no-margin {
   margin: 0 !important;
 }
 .block {
   display: block;
 }
-.alegreya {
-  font-family: 'Alegreya Sans', sans-serif;
-  font-weight: 800;
+.full-width {
+  width: 100%;
 }
 
 // ===================================== \
 // Base
 // ===================================== /
 body {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
+  @extend .gentium;
 }
 a {
   color: $mid;
@@ -60,7 +86,7 @@ h2, h3, h4, h5, h6 {
   padding: 20px 0;
 }
 h1 {
-  @extend .alegreya;
+  @extend .abril;
   color: $mid;
   line-height: 50px;
   span {
@@ -72,13 +98,15 @@ h2 {
 }
 .main-header--nav {
   a {
+    @extend .gentium;
     display: inline-block;
     padding: 15px;
+    text-transform: uppercase;
     &:hover {
       background-color: rgba($mid, .1);
     }
     &.active {
-      @include single-box-shadow(rgba(0,0,0,.1), 0, -2px, 10px, 0, inset);
+      @include single-box-shadow(0, -2px, 10px, 0, rgba(0,0,0,.1), inset);
       background-color: rgba($mid, .7);
       color: #FFF;
     }
