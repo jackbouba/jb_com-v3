@@ -114,44 +114,23 @@ h2 {
 }
 
 // ===================================== \
-// Carousel
+// Hero
 // ===================================== /
-.carousel {
-  background-color: $dark;
-  color: #FFF;
-  padding: 0;
-  text-align: center;
-  .item {
-    padding: 120px 0;
-  }
-  .item1 {
-    background-color: $dark;
-    background-image: url(/images/bg_webdesign2.png);
-  }
-  .item2 {
-    background-color: $light;
-    background-image: url(/images/bg_writing.png);
-  }
-  .item3 {
-    background-color: $mid;
-    background-image: url(/images/bg_walking.png);
-  }
-}
-.carousel--headline {
-  font-size: 40px;
-}
-.carousel-indicators {
-  li {
-    background-color: rgba(0,0,0,.2);
-    border: none;
-    margin: 0 3px;
-    width: 15px;
-    height: 15px;
-  }
-  .active {
-    margin: 0 3px;
-    width: 15px;
-    height: 15px;
+.hero {
+  background-image: url('/images/bg_bouba-baby.jpg');
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  h2 {
+    @extend .open-sans;
+    color: white;
+    font-size: 400px;
+    line-height: 1.4;
+    margin: 0;
+    opacity: 0;
+    text-transform: uppercase;
   }
 }
 
