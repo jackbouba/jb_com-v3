@@ -31,6 +31,9 @@
   font-family: 'Gentium Book Basic', serif;
   font-weight: 400;
 }
+.gravitas {
+  font-family: 'Gravitas One', cursive;
+}
 
 // ===================================== \
 // Utilities
@@ -43,6 +46,38 @@
 }
 .full-width {
   width: 100%;
+}
+.text-light {
+  color: $grey;
+}
+.text-mid {
+  color: $midGrey;
+}
+.block {
+  display: block;
+}
+.xl {
+  font-size: 60px;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.drop-cap {
+  @extend .gravitas;
+  @extend .pull-left;
+  font-size: 98px;
+  line-height: 70px;
+  margin: 10px 10px 0 0;
+}
+
+.columns-3 {
+  -webkit-columns: 3;
+     -moz-columns: 3;
+          columns: 3;
+  -webkit-column-gap: 2em;
+     -moz-column-gap: 2em;
+          column-gap: 2em;
 }
 
 // ===================================== \
@@ -89,9 +124,6 @@ h1 {
   @extend .abril;
   color: $mid;
   line-height: 50px;
-  span {
-    color: $grey;
-  }
 }
 h2 {
   margin-bottom: 40px;
@@ -199,71 +231,81 @@ h2 {
   h2 {
     color: #FFF;
   }
-  li {
-    background-repeat: no-repeat;
-    background-position: 0 -242px;
-    display: inline-block;
-    margin: 0 20px 40px;
-    position: relative;
-    width: 242px;
-    height: 242px;
-    a {
-      @include single-transition(opacity, 0.3s, linear, false);
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      content: " ";
-      opacity: 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 242px;
-      height: 242px;
-    }
-    span {
-      background-color: rgba($light, .85);
-      color: rgba(255,255,255,.7);
-      font-size: 16px;
-      padding: 35% 10px 0;
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      top: 0;
-      //height: 40%;
-      strong {
-        color: #FFF;
-      }
-    }
+  .portfolio-link {
+    float: left;
+    width: 50%;
     &:hover {
-      a {
-        opacity: 1;
+      background: white;
+      img {
+        opacity: .1;
       }
-    }
-    &.javelin, &.javelin a {
-      background-image: url(/images/bg_javelin.png);
-    }
-    &.jubei, &.jubei a {
-      background-image: url(/images/bg_jubei.png);
-    }
-    &.bagdad, &.bagdad a {
-      background-image: url(/images/bg_bagdad.png);
-    }
-    &.contiki, &.contiki a {
-      background-image: url(/images/bg_contiki.png);
-    }
-    &.webdev, &.webdev a {
-      background-image: url(/images/bg_webdev.png);
-    }
-    &.stacey, &.stacey a {
-      background-image: url(/images/bg_stacey.png);
-    }
-    &.mcmenamins, &.mcmenamins a {
-      background-image: url(/images/bg_mcmenamins.png);
-    }
-    &.blog, &.blog a {
-      background-image: url(/images/bg_blog.png);
     }
   }
+//  li {
+//    background-repeat: no-repeat;
+//    background-position: 0 -242px;
+//    display: inline-block;
+//    margin: 0 20px 40px;
+//    position: relative;
+//    width: 242px;
+//    height: 242px;
+//    a {
+//      @include single-transition(opacity, 0.3s, linear, false);
+//      background-repeat: no-repeat;
+//      background-position: 0 0;
+//      content: " ";
+//      opacity: 0;
+//      position: absolute;
+//      top: 0;
+//      left: 0;
+//      width: 242px;
+//      height: 242px;
+//    }
+//    span {
+//      background-color: rgba($light, .85);
+//      color: rgba(255,255,255,.7);
+//      font-size: 16px;
+//      padding: 35% 10px 0;
+//      position: absolute;
+//      left: 0;
+//      right: 0;
+//      bottom: 0;
+//      top: 0;
+//      //height: 40%;
+//      strong {
+//        color: #FFF;
+//      }
+//    }
+//    &:hover {
+//      a {
+//        opacity: 1;
+//      }
+//    }
+//    &.javelin, &.javelin a {
+//      background-image: url(/images/bg_javelin.png);
+//    }
+//    &.jubei, &.jubei a {
+//      background-image: url(/images/bg_jubei.png);
+//    }
+//    &.bagdad, &.bagdad a {
+//      background-image: url(/images/bg_bagdad.png);
+//    }
+//    &.contiki, &.contiki a {
+//      background-image: url(/images/bg_contiki.png);
+//    }
+//    &.webdev, &.webdev a {
+//      background-image: url(/images/bg_webdev.png);
+//    }
+//    &.stacey, &.stacey a {
+//      background-image: url(/images/bg_stacey.png);
+//    }
+//    &.mcmenamins, &.mcmenamins a {
+//      background-image: url(/images/bg_mcmenamins.png);
+//    }
+//    &.blog, &.blog a {
+//      background-image: url(/images/bg_blog.png);
+//    }
+//  }
 }
 // ===================================== \
 // Contact
