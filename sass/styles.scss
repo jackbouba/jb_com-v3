@@ -103,7 +103,7 @@ a {
   background-color: rgba($mid, .6);
   color: rgba(255,255,255,.7);
   display: inline-block;
-  font-size: 20px;
+  font-size: 18px;
   padding: 15px 25px;
   &:hover {
     background-color: rgba($mid, 1);
@@ -271,15 +271,16 @@ h2 {
 
 .project-data {
   dt {
-    @extend .small;
-    @extend .open-sans;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    @extend .h4;
+    @extend .no-margin;
+    font-style: italic;
     opacity: .4;
   }
   dd {
     @extend .h2;
+    @extend .open-sans;
     margin: 0 0 40px;
+    text-transform: uppercase;
   }
 }
 
