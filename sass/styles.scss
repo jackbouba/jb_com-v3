@@ -41,6 +41,9 @@
 .no-margin {
   margin: 0 !important;
 }
+.no-padding {
+  padding: 0 !important;
+}
 .block {
   display: block;
 }
@@ -58,6 +61,9 @@
 }
 .mb40 {
   margin-bottom: 40px;
+}
+.mt40 {
+  margin-top: 40px;
 }
 .text-italic {
   font-style: italic;
@@ -98,16 +104,17 @@ a {
 }
 .link {
   @include single-transition(all, 0.3s, linear, false);
-  // @include border-radius(3px);
-  background-color: $mid;
-  background-color: rgba($mid, .6);
-  color: rgba(255,255,255,.7);
+  border: 1px solid $mid;
   display: inline-block;
   font-size: 18px;
   padding: 15px 25px;
+  &.block {
+    display: block;
+    letter-spacing: 1px;
+  }
   &:hover {
     background-color: rgba($mid, 1);
-    color: rgba(255,255,255,.9);
+    color: #FFF;
   }
 }
 
@@ -264,8 +271,8 @@ h2 {
 }
 
 .portfolio-item {
-  background-color: grey;
-  color: white;
+  background-color: $grey;
+//  color: white;
   clear: both;
 }
 
